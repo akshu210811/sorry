@@ -42,7 +42,7 @@ export const BouquetScreen: React.FC<BouquetScreenProps> = ({ onContinue, onBack
           transition={{ delay: 0.35 }}
           className="font-serif text-3xl sm:text-4xl md:text-5xl text-coquette-text font-normal tracking-tight mb-3 leading-tight"
         >
-          These are for you, sweetheart{" "}
+          For someone whose heart deserves the prettiest flowers{" "}
           <span className="font-serif italic text-coquette-deeprose">♡</span>
         </motion.h2>
 
@@ -53,7 +53,7 @@ export const BouquetScreen: React.FC<BouquetScreenProps> = ({ onContinue, onBack
           transition={{ delay: 0.5 }}
           className="font-sans text-base sm:text-lg text-coquette-text/85 max-w-lg mb-6 sm:mb-8 font-light leading-relaxed"
         >
-          Because you deserve flowers, even on the days when I don&apos;t get my words right.
+          You&apos;re always finding ways to make other people&apos;s days a little better. Here&apos;s a little something to make yours a little prettier.
         </motion.p>
 
         {/* Visual Highlight: The Animated Flower Bouquet */}
@@ -64,6 +64,45 @@ export const BouquetScreen: React.FC<BouquetScreenProps> = ({ onContinue, onBack
           className="my-2 sm:my-4"
         >
           <FlowerBouquet />
+        </motion.div>
+
+        {/* Personalized Appreciation Card */}
+        <motion.div
+          initial={{ opacity: 0, y: 25 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.75 }}
+          className="w-full max-w-xl mx-auto my-8 bg-white/85 backdrop-blur-md rounded-3xl p-6 sm:p-9 text-left shadow-coquette border border-coquette-blush/70 coquette-border relative"
+        >
+          <div className="flex items-center gap-2.5 mb-5">
+            <CoquetteBow size={28} color="#D96E92" />
+            <h3 className="font-serif text-xl sm:text-2xl text-coquette-darkrose font-medium">
+              To the girl with the kindest heart...
+            </h3>
+          </div>
+
+          <div className="space-y-4 font-sans text-sm sm:text-base text-coquette-text/90 leading-relaxed font-normal">
+            <p>
+              Meet, there are people who make the world a little less difficult just by being in it. And I genuinely think you&apos;re one of those people.
+            </p>
+            <p>
+              You&apos;re someone who notices when others need help, someone who cares about the little things and someone who makes an effort to be there when people need her.
+            </p>
+            <p>
+              You have this beautiful way of making people feel that they&apos;re not alone. You give your time, attention and kindness, sometimes without even realising how much it means to someone.
+            </p>
+            <p className="font-medium text-coquette-darkrose">
+              And that&apos;s something I admire about you.
+            </p>
+            <p>
+              I hope you realise how rare that kind of heart is. The world needs more people who care the way you do.
+            </p>
+            <p>
+              But there&apos;s something I hope you remember too: the person who is always there for everyone deserves someone who is there for her, too.
+            </p>
+            <p className="font-medium text-coquette-darkrose">
+              You deserve the same kindness, patience and care that you give to everyone else.
+            </p>
+          </div>
         </motion.div>
 
         {/* Navigation Button to Apology Letter */}

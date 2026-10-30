@@ -213,56 +213,49 @@ export const LetterScreen: React.FC<LetterScreenProps> = ({
                   <div className="w-12 h-[2px] bg-coquette-rose/50 mt-2" />
                 </div>
 
-                {/* Apology Letter Body (Verbatim, cleanly spaced, elegant typography) */}
+                {/* Apology Letter Body */}
                 <div className="space-y-4 sm:space-y-5 font-sans text-sm sm:text-base leading-relaxed text-coquette-text/90 font-normal">
                   <p>
-                    I know you&apos;ve been feeling that I dry text you, and I am genuinely sorry for making you feel that way.
+                    I know that sometimes I dry text you, and I understand that it can make you feel like I&apos;m not interested in talking to you or that I don&apos;t care enough.
                   </p>
 
                   <p>
-                    I never want my replies to make you question how much you mean to me.
+                    I&apos;m genuinely sorry for making you feel that way.
                   </p>
 
                   <p>
-                    I know that sometimes my texts can be short or a little dry, and I understand why that can hurt. You deserve more than just a few words that make you feel like I&apos;m not interested in talking to you.
+                    You&apos;re not just another notification or another conversation on my phone. You&apos;re someone whose stories I want to hear, whose random thoughts I want to know and whose day I should genuinely be interested in.
                   </p>
 
                   <p>
-                    I don&apos;t want to make excuses. Even if I don&apos;t always know what to say or how to express myself properly, that doesn&apos;t mean I should make you feel unimportant.
+                    You deserve more than short replies that leave you wondering whether I even want to talk.
                   </p>
 
                   <p>
-                    I love talking to you, hearing about your day, knowing what&apos;s going on in your mind and being a part of your little everyday moments.
+                    I don&apos;t want to make excuses. I want to understand how my actions make you feel and actually work on them.
                   </p>
 
                   <p>
-                    I&apos;m sorry if I haven&apos;t been showing that properly.
+                    I want to put more thought into my replies, listen better, ask more questions and make our conversations feel like conversations between two people who genuinely enjoy each other&apos;s company.
                   </p>
 
                   <p>
-                    I want to make a genuine effort to communicate better, put more thought into my replies and make sure you feel heard and appreciated.
-                  </p>
-
-                  <p className="font-medium text-coquette-darkrose">
-                    You shouldn&apos;t have to keep wondering whether I care.
-                  </p>
-
-                  <p>
-                    I know a website and a letter cannot magically fix everything, but I hope this helps you understand that I do care, that I am listening and that your feelings matter to me.
+                    I know a website and a letter cannot undo how you felt, but I hope this shows that I have listened.
                   </p>
 
                   <p className="text-coquette-darkrose font-medium">
                     I&apos;m sorry, sweetheart.
                   </p>
+
+                  <p className="font-medium text-coquette-darkrose">
+                    You matter to me, and I want to become better at making sure you feel that too.
+                  </p>
                 </div>
 
                 {/* Handwritten Sign-off */}
                 <div className="mt-8 pt-6 border-t border-coquette-blush/40 flex flex-col items-end">
-                  <p className="font-handwriting text-2xl sm:text-3xl text-coquette-darkrose leading-snug">
-                    With all my love,
-                  </p>
-                  <p className="font-handwriting text-3xl sm:text-4xl text-coquette-deeprose font-bold">
-                    Yours ♡
+                  <p className="font-handwriting text-2xl sm:text-3xl text-coquette-deeprose font-bold">
+                    With love, always. ♡
                   </p>
                 </div>
 

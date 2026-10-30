@@ -22,21 +22,27 @@ export const RemindersScreen: React.FC<RemindersScreenProps> = ({
   const reminders = [
     {
       number: "01",
-      title: "You matter to me.",
-      body: "Even when I don't get my words right or my replies seem brief, you are never far from my mind. You are my favorite person, always.",
+      title: "LISTEN BETTER",
+      body: "I want to pay attention to the little things you tell me, because they matter.",
       accent: "♡",
     },
     {
       number: "02",
-      title: "I'm listening, always.",
-      body: "Your feelings will never be too much or unimportant to me. You deserve someone who listens with an open heart, and I am here for you.",
+      title: "PUT IN MORE EFFORT",
+      body: "I don't want you to feel like you're carrying a conversation alone.",
       accent: "🌷",
     },
     {
       number: "03",
-      title: "I want to do better.",
-      body: "Not with empty promises, but with real effort every single day—putting more thought into my words, sharing my world with you, and making sure you feel cherished.",
+      title: "APPRECIATE YOU",
+      body: "I want you to know that your presence, your thoughts and your little everyday stories matter to me.",
       accent: "💌",
+    },
+    {
+      number: "04",
+      title: "SHOW, NOT JUST SAY",
+      body: "I want my actions to communicate what my words sometimes fail to express.",
+      accent: "✨",
     },
   ];
 
@@ -87,18 +93,18 @@ export const RemindersScreen: React.FC<RemindersScreenProps> = ({
           transition={{ delay: 0.3 }}
           className="font-sans text-base sm:text-lg text-coquette-text/80 text-center max-w-md mb-12 font-light"
         >
-          Three little truths and promises I hold close to my heart.
+          Four little promises I hold close to my heart.
         </motion.p>
 
-        {/* Three Animated Cards Displayed Staggered */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mb-14">
+        {/* Animated Promise Cards Displayed Staggered */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full max-w-2xl mb-14">
           {reminders.map((reminder, idx) => (
             <motion.div
               key={reminder.number}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.4 + idx * 0.2,
+                delay: 0.4 + idx * 0.15,
                 duration: 0.6,
                 ease: [0.16, 1, 0.3, 1],
               }}
@@ -114,7 +120,7 @@ export const RemindersScreen: React.FC<RemindersScreenProps> = ({
               </div>
 
               {/* Title */}
-              <h3 className="font-serif text-xl sm:text-2xl text-coquette-text font-medium mb-3 leading-snug group-hover:text-coquette-darkrose transition-colors">
+              <h3 className="font-serif text-lg sm:text-xl text-coquette-text font-semibold mb-3 tracking-wide leading-snug group-hover:text-coquette-darkrose transition-colors">
                 {reminder.title}
               </h3>
 
@@ -143,17 +149,35 @@ export const RemindersScreen: React.FC<RemindersScreenProps> = ({
           {/* Subtle background glow */}
           <div className="absolute -right-10 -bottom-10 w-40 h-40 rounded-full bg-coquette-rose/20 blur-2xl pointer-events-none" />
 
-          <div className="flex justify-center mb-4">
+          <div className="flex justify-center mb-5">
             <Heart className="w-8 h-8 fill-coquette-deeprose text-coquette-deeprose animate-pulse" />
           </div>
 
-          <h4 className="font-serif text-2xl text-coquette-text font-normal mb-3">
-            No pressure, always love.
-          </h4>
+          <div className="space-y-4 font-sans text-sm sm:text-base text-coquette-text/90 leading-relaxed font-light mb-8 text-left sm:text-center">
+            <p className="font-serif text-xl sm:text-2xl text-coquette-darkrose font-normal leading-snug">
+              Meet, I hope the world is as kind to you as you are to the people around you.
+            </p>
 
-          <p className="font-sans text-sm sm:text-base text-coquette-text/85 leading-relaxed mb-6 font-light">
-            You don&apos;t have to brush this off or reply right away. Take all the time you need. I just wanted you to know that you are deeply valued, listened to, and worth every effort. ♡
-          </p>
+            <p>
+              I hope you always have someone who listens to your little stories, notices when something is wrong and reminds you that you matter.
+            </p>
+
+            <p>
+              You spend so much time being there for others. I hope I can become someone who makes you feel just as cared for.
+            </p>
+
+            <p>
+              I&apos;m sorry for the times I haven&apos;t shown that properly.
+            </p>
+
+            <p>
+              You deserve effort, attention and love in the little everyday moments.
+            </p>
+
+            <p className="font-handwriting text-2xl sm:text-3xl text-coquette-deeprose font-bold pt-2">
+              And I want to do better. ♡
+            </p>
+          </div>
 
           {/* Interactive Hug Button */}
           <div className="flex flex-col items-center gap-3">
