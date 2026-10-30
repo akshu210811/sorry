@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-babypink: #FCE4EC;
+  --color-blush: #F8BBD0;
+  --color-rose: #EFA6BF;
+  --color-deeprose: #C75B82;
+  --color-cream: #FFF8F5;
+  --color-white: #FFFFFF;
+  --color-text: #684454;
+}
+
+/* Custom romantic smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF8F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F8BBD0;
+  border-radius: 9999px;
+  border: 2px solid #FFF8F5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #EFA6BF;
+}
+
+/* 3D Envelope perspective */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Subtle Coquette Lace Border */
+.coquette-border {
+  border: 1px solid rgba(239, 166, 191, 0.45);
+  box-shadow: 0 0 0 4px rgba(254, 240, 245, 0.8), 0 0 0 5px rgba(248, 187, 208, 0.35);
+}
+
+/* Ribbon bow pseudo elements helper */
+.ribbon-loop-left {
+  border-radius: 50% 50% 10% 50% / 50% 50% 20% 50%;
+}
+
+.ribbon-loop-right {
+  border-radius: 50% 50% 50% 10% / 50% 50% 50% 20%;
+}
+
+/* Subtle parchment grain simulation */
+.parchment-pattern {
+  background-color: #FFFDFB;
+  background-image: 
+    radial-gradient(#F8BBD0 0.5px, transparent 0.5px),
+    radial-gradient(#FCE4EC 0.5px, #FFFDFB 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
