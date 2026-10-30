@@ -232,6 +232,11 @@ export const RemindersScreen: React.FC<RemindersScreenProps> = ({
           </p>
         </div>
       </div>
+
+      {/* Discrete Corner Signature */}
+      <div className="absolute bottom-4 right-6 text-[11px] font-handwriting text-coquette-deeprose/50 tracking-wider select-none">
+        made by akshu ♡
+      </div>
     </section>
   );
 };
