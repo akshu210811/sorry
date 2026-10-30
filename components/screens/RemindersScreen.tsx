@@ -250,16 +250,11 @@ export const RemindersScreen: React.FC<RemindersScreenProps> = ({
         </motion.div>
 
         {/* Final signature footer */}
-        <div className="mt-12 text-center select-none">
+        <div className="mt-12 text-center select-none pb-4">
           <p className="font-handwriting text-2xl text-coquette-deeprose/80">
             Forever yours ♡
           </p>
         </div>
-      </div>
-
-      {/* Discrete Corner Signature */}
-      <div className="absolute bottom-4 right-6 text-[11px] font-handwriting text-coquette-deeprose/50 tracking-wider select-none">
-        made by akshu ♡
       </div>
     </section>
   );

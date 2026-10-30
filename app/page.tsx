@@ -112,6 +112,13 @@ export default function Home() {
           )}
         </AnimatePresence>
       </div>
+
+      {/* Subtle bottom footer credit */}
+      <footer className="relative z-20 pb-5 text-center select-none pointer-events-none">
+        <p className="text-[11px] font-sans text-coquette-deeprose/55 tracking-widest lowercase">
+          made by akshu
+        </p>
+      </footer>
     </main>
   );
 }
